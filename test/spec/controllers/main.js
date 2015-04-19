@@ -13,28 +13,6 @@ describe('Navigation Controller', function () {
        expect($(fixture).find('.is-visible').length).toBe(1);
     });
 
-    // beforeEach(function() {
-    //   a = $('<a />', {'id':'link1'});
-    //   NavController.bindEvents(a[0]);     
-    // });
-
-   // it ("should invoke the #link1 click event.", function() {
-   //    //spyEvent = spyOnEvent('#link1', 'click');
-   //    $('#link1').trigger( 'click');
-         
-   //   // expect('click').toHaveBeenTriggeredOn('#link1');
-   //    expect(NavController.getLinkId).toHaveBeenCalled();
-   //    //expect(spyEvent).toHaveBeenTriggered();
-   //  });
-        
-    // it ("should invoke the btnHideMessage click event.", function() {
-    //   spyEvent = spyOnEvent('#btnHideMessage', 'click');
-    //   $('#btnHideMessage').trigger( "click" );
-         
-    //   expect('click').toHaveBeenTriggeredOn('#btnHideMessage');
-    //   expect(spyEvent).toHaveBeenTriggered();
-    // });
-
   });
 
   it('should create a list of links', function () {
