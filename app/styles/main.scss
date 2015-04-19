@@ -1,0 +1,128 @@
+// bower:scss
+// endbower
+
+////// NOTE TO INTERVI INTERVIEWER //////////
+// colors values should have been done as variables :) 
+// didn't use proper fonts
+// design is not px maatched 
+
+@import 'variables';
+@import 'mixins';
+
+/////////////////////////////////////
+* {
+	@include box-sizing();
+}
+///
+
+body {
+	/// TO DO this isn't right font
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+.content {
+	background:#ffffff;
+	@extend %clearfix;
+}
+
+header {
+	@include linearGradient(#db4a8f, #c63877);
+	position: relative;
+	padding:10px 0;
+	border-bottom: 1px solid #9a9a9a;
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+}
+////
+.nav {
+	@include respond-to($mq-m) {
+  		width:35%;
+  		border: 1px solid #9a9a9a;
+  		float:left;
+  		margin:2% 0 0 2%;
+  	}	
+}
+.nav-list {
+	padding:0;
+	margin:0;
+}
+
+.nav-list_item {
+	list-style:none;
+	border-bottom: 1px solid #9a9a9a;
+	a {
+		text-decoration: none;
+		display:block;	
+		padding: 10px 20px;
+		@include linearGradient(#fefefe, #e6e6e6);
+		color:#363636;
+	}
+}
+////
+.section {
+	position:relative;
+	background:#f5f5f5;
+	@extend %clearfix;
+	@include respond-to($mq-m) {
+  		width:50%;
+  		border-bottom: 1px solid #9a9a9a;
+  		float:left;
+  		margin:2% 0 0 5%;
+  	}	
+}
+
+.section_article {
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	padding:10px;
+	width:100%;
+	background:#f5f5f5;
+	@include respond-to($mq-m) {
+  		border-bottom: 1px solid #9a9a9a;
+  	}	
+}
+
+.section_article.is-visible {
+	display:block;
+}
+
+.section-image {
+	width:45%;
+	float:left;
+}
+
+.tottal-summary {
+	width: 50%;
+	float: right;
+	height:100%;
+}
+
+.tottal-summary_title {
+	margin:0;
+	color:#363636;
+	padding:0;
+}
+
+.tottal-summary_tottal {
+	position: absolute;
+	right:10px;
+	bottom:0;
+}
+
+.tottal-summary_total-price {
+	color:#db4a8f;
+	font-weight:bold;
+	font-size:1.5rem;
+}
+
+.tottal-summary_tottal_desc {
+	display:block;
+}
+ 
+
+
+
