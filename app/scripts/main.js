@@ -36,6 +36,8 @@ var NavController = (function(){
 		showHideArticle(section, id);
 	}
 
+	// TO DO add is-selected class to differnetiate selected link
+
 	function showHideArticle(section, id) {
 		var articles = section.getElementsByTagName('article'),
 			aId = 'article'+id;
@@ -116,7 +118,6 @@ var SectionController = (function(){
 }());	
 
 var init =(function(){
-
   return {
   	appendlisttoDom: NavController.appendlisttoDom,
   	appendContenttoDom: SectionController.appendContenttoDom

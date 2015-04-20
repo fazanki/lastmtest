@@ -1,12 +1,3 @@
-$responsive: true;
-@function px-to-em($px:0) {
-  @if $responsive {
-    @return ($px / 16) * 1rem;
-  }
-  @else {
-    @return $px * 1px;
-  }
-}
 
 $mq-xs:0 !default;
 $mq-s:px-to-em(480) !default;
