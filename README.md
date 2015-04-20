@@ -9,8 +9,7 @@ It dosen't depend on RESTful api so you can run it direclty into browser no serv
 ## Build & development
 run `npm install`
 
-run `bower install` - for test depen
-you might need to install grunt task runner globaly. 
+run `bower install` - for test dependecies you might need to install grunt task runner globaly. 
 
 Run `grunt serve` for preview.
 
